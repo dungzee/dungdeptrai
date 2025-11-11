@@ -12,7 +12,7 @@ SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 Base = declarative_base()
 
-# Kiểm tra kết nối
+# Kiểm tra kết nối nek
 try:
     with engine.connect() as connection:
         result = connection.execute(text("SELECT 1"))
